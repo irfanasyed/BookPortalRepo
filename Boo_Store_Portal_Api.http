@@ -1,0 +1,6 @@
+@Boo_Store_Portal_Api_HostAddress = http://localhost:5197
+
+GET {{Boo_Store_Portal_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
