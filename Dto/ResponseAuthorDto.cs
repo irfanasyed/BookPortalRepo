@@ -2,8 +2,10 @@
 
 namespace Boo_Store_Portal_Api.Dto
 {
-    public class CreateAuthorDto
+    public class ResponseAuthorDto
     {
+        [Key]
+        public int AuId { get; set; }
         [Required]
         [StringLength(25, MinimumLength = 4, ErrorMessage = "Name should contain more than 4 characters")]
         public string AuLname { get; set; }
@@ -28,5 +30,6 @@ namespace Boo_Store_Portal_Api.Dto
         [Required]
         [StringLength(20, ErrorMessage = "contract should contain within 20 characters")]
         public string Contract { get; set; }
+        //public string Message { get; set; }=string.Empty;
     }
 }
